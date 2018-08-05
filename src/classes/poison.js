@@ -9,7 +9,6 @@ class Poison extends Entity {
   }
 
   consume(consumer, removeFromState) {
-    debugger
     consumer.kill(removeFromState)
     removeFromState('poison', this)
   }
